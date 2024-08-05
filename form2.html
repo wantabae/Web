@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Version 2</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+    <center>
+    <h1>Language School</h1>
+    <h2>Form for Certificate in Foreign Languages, Please fill the Form Carefully*</br>All Fields are required**</h2>
+    </center>
+    <main>
+        Language Course Registration Form:</br></br>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Personal Informaiton:</legend>
+                    </br><label for="first_name">First Name:</label>
+                    <input required type="text" autofocus id="first_name" name="first_name" accesskey="f">
+                    </br><label for="last_name">Last Name:</label>
+                    <input required type="text" id="last_name" name="last_name" accesskey="l">
+                    </br><label for="profile">Upload your Photograph:</label>
+                    <input required type="file" name="profile" id="profile" accept="image/jpeg, image/png">
+                    </br><label for="dob">Date of Birth:</label>
+                    <input required type="date" name="dob" id="dob" accesskey="d">
+                    </br><label for="Fname">Father's Name:</label>
+                    <input required type="text" name="Fname" id="Fname">
+                    </br><label for="Mname">Mother's Name:</label>
+                    <input required type="text" name="Mname" id="Mname">
+                    
+        </fieldset>
+        <fieldset >
+            <legend>Contact Information:</legend>
+            </br><label for="mobile">Enter your Contact Number:</label>
+            <input required type="tel" id="mobile" name="mobile" placeholder="+91-" pattern="[6-9]{1}[0-9]{9}" accesskey="m">
+            </br><label for="email">Enter your Email Address:</label>
+            <input required type="email" name="email" id="email" accesskey="e">
+            </br><label for="address">Enter your Address</label>
+            <input required type="text" name="address" id="address">
+        </fieldset>
+        <fieldset>
+            <legend>Educational Background:</legend>
+                </br><label for="Senior_secondary">Senior Secondary Marks(in %):</label>
+                <input required type="number" name="Senior_secondary" id="Senior_secondary" min="0" max="100" step="0.1" >
+                </br><label for="marksheet">Upload your Senior Secondary Marksheet:</label>
+                <input required type="file" name="marksheet" id="marksheet" accept="image/jpeg,image/png">
+                </br><label for="college">College Name:</label>
+                <input required type="text" name="college" id="college" list="colleges" accesskey="c">
+                <datalist id="colleges">
+                    <option value="Hansraj College" label="Hansraj College">
+                    <option value="Kirorimal College" lebel="Kirorimal College">
+                    <option value="Hindu College" lebel="Hindu College">
+                    <option value="Ramjas College" lebel="Ramjas College">
+                    <option value="St. Stephen College" label="St. Stephen College">
+                </datalist>
+                </br><label for="college_roll">College Roll Number:</label>
+                <input required type="text" name="college_roll" id="college_roll" size=5 pattern="[0-9]{5}">
+                </br><label for="univ_roll">University Roll Number:</label>
+                <input required type="text" name="univ_roll" id="univ_roll" pattern="[0-2]{4}[A-Z]{3}[0-9]{8}">
+                </br><label for="cgpa">Enter your Current CGPA:</label>
+                <input required type="number" name="cgpa" id="cgpa" min="0" max="10" step="0.1">
+                </br><label for="id_card">Upload your College ID Card:</label>
+                <input required type="file" name="id_card" id="id_card" accept="image/jpeg,image/png" >
+        </fieldset>
+        <fieldset>
+            <legend>Course Selection:</legend>
+            </br><label for="languages">Choose the Language which you want to enroll for:</label>
+            <select >
+                <option value="French">French</option>
+                <option value="German">German</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Russian">Russian</option>
+            </select>
+            </br><label for="experience">How would you rate yourself on scale of 5 in experience for language:</label>
+            <input required type="range" min="0" max="5">
+        </fieldset>
+        <fieldset>
+            <legend>Payment Information:</legend>
+            </br><label for="payment_date">Choose the date of Payment:</label>
+            <input required type="date" name="payment_date" id="payment_date">
+            </br><label for="payment_id">Enter the Payment ID:</label>
+            <input required type="text" name="payment_id" id="payment_id">
+            </br><label for="payment_slip">Upload the Payment Reciept:</label>
+            <input required type="file" name="payment_slip" id="payment_slip" accept="image/jpeg,image/png">
+        </fieldset>
+        <fieldset>
+            <legend>Decalaration:</legend>
+            <p>I hereby confirm that the information provided by me are correct to best of my knowledge uptil now.</p>
+            
+            </br><label for="yes">Yes</label>
+            <input required type="radio" name="yes" id="yes">
+            <label for="no">No</label>
+            <input required type="radio" name="no" id="no">
+            </br><label for="signature">Upload your Signature:</label>
+            <input required type="file" name="signature" id="signature" accept="image/jpeg,image/png">
+        </fieldset>
+        <fieldset>
+        <center>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        </center>
+    </fieldset>
+    </form>
+    </main>
+</body>
+</html>

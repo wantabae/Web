@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>
+            Registration Form
+        </title>
+    </head>
+    <style type="text/css">
+        body{font-family:'Times New Roman', Times, serif;
+             border-style: solid;
+             background-color:rgb(114, 174, 191);
+             text-align: left;
+             text-decoration: double;
+
+             }
+        h1{color: rgb(0, 0, 0);
+           font: bolder;
+           font-size:50px;
+           padding: 20px;
+           border-style:solid;
+           ;
+    
+         }
+         label{font-weight: bolder;
+               font-style: italic;
+            color:rgb(14, 13, 13);
+            width: 100px;
+            display: inline-block;
+            padding: 5px;
+        border-color: black;}
+
+        input{ margin-left: 100px;
+               margin-bottom: 10px;}
+
+        table{border-style: double;
+               border-width: 1px;
+               border-color: black; 
+               border-style:solid; }
+        
+        .pi{border-style: solid;
+            border-color: black;}   
+        .ad{border-color: black;
+            border-style: solid;} 
+        .qual{border-color: black;
+             border-style: solid; }       
+
+               
+        </style>
+        <form></form>
+        <img src="data:image/png;base64,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" width="300px" height="100px" align="right">
+    
+    <h1><center><b><i><U>Registration Form </b><i></U></center></h1>
+        <form action="Res.html" method="get">
+                <hr color="black">
+                    <legend><b>PERSONAL INFO</b></legend>
+
+            <b><label>Student Name:</label>
+                <input type=" text" placeholder=" First Name" name="fname" id="fid" autofocus required>
+                <input type=" text" placeholder="Middle Name" name="mname" id="mid">
+                <input type=" text" placeholder="Last Name" name="lname" id="last">
+             
+            </b><br>
+            
+
+            <b><label> Student Id:</label>
+                <input type="checkbox" >Adhar Card
+                <input type="checkbox" name="c2" id="c2">PAN Card
+                <input type="checkbox" name="c3" id="c3">Passport
+            </b><br>
+            <label>Choose file to upload</label>
+                <input type="file" name="file" id="file" accept="image/*">
+            <br>
+
+            <b><labeL> Father's Name:</label>
+                <input type="text" name="name" id="fathern"><br></br>
+
+            <b><label> Date Of Birth </label>
+                <input type="date" name="dob" id="dob" required>
+            </b>
+
+            </b><br></br>
+            <b> <label>AGE:</label>
+                <input type="number" placeholder="18" age="year" id="ageid" required>
+                
+            </b> <br>
+
+            <b> <label> Mail id : </label>
+                <input type="email" placeholder="abc@gmail.com" mail="email" id="emailid" required>
+
+            </b><br>
+            <br></br>
+          
+                <legend><b>ADRESS AND OTHER INFO</b></legend>
+
+            <b><label> Permanent Address </label>
+                <input type="text" address="add" id="addid" required>
+
+            </b><br>
+
+            <b> <label>Contact Details</label>
+                <input type="tel"  placeholder="1234456789" number="number" id="numid" maxlength="12" required pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+            </b><br>
+
+            <b> <label>Sex : </label>
+                <input type="radio" id="mid" name="mgender">Male
+                <input type="radio" id="mid" name="mgender">Female
+                <input type="radio" id="mid" name="mgender">Other 
+  
+
+            </b><br></br>
+
+        
+                <legend><b>EDUACATIONAL INFO</b></legend>
+                <table border="10px">
+                    <tr>
+                        <td>STANDARD</td>
+                        <td>PERCENTAGE</td>
+                        <td>FILE</td>
+                    </tr>
+                    <tr><td>10th STANDARD</td>
+                    <td><input type="number" placeholder="10th Percentage"></td>
+                    <td><input type="file"></td>
+                    </tr>
+                    <tr><td>12th STANDARD</td>
+                        <td><input type="number" placeholder="12th Percentage"></td>
+                        <td><input type="file"></td>
+                        </tr>
+
+                </table>
+
+            <br><br><center>
+            <button type="submit">SUBMIT</button>
+            <button type="reset"> RESET</button></br></center></br>
+            
+
+    
+        </form>
+</html>
